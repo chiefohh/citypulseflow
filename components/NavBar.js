@@ -48,6 +48,7 @@ export default function NavBar() {
             gap: 10,
             textDecoration: 'none',
             cursor: 'pointer',
+            color: 'inherit',
           }}
         >
           <Building2 size={22} color="#7C3AED" strokeWidth={1.75} />

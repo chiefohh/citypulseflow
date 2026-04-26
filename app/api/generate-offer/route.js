@@ -84,12 +84,14 @@ export async function POST(request) {
 
   const systemPrompt = `You are a hyper-local offer engine for Stuttgart, Germany. Given contextual signals, you generate a single compelling, time-sensitive local offer.
 
+IMPORTANT: Generate the offer in English only. All text including merchant name, headline, and product description must be in English. The merchant should sound like a real local Stuttgart business but written in English (e.g. "Castle Garden Café", "The West Quarter Bistro", "South Side Pizza").
+
 Respond with ONLY valid JSON — no markdown, no explanation, no code fences. The JSON object must contain exactly these fields:
-- merchant: string (a plausible Stuttgart business name, referencing real neighborhoods like Mitte, Bohnenviertel, Schlossgarten, West, Süd, or Nord)
+- merchant: string (a plausible Stuttgart business name in English, referencing neighborhoods like City Center, Castle Garden, West Quarter, South Side, or North End)
 - distance: string (walking distance, e.g. "80m away" or "3 min walk")
-- headline: string (emotional, urgency-driven, exactly 8–10 words)
+- headline: string (emotional, urgency-driven, exactly 8–10 words, in English)
 - discount: string (e.g. "15%", "20%", "2-for-1", "free upgrade")
-- product: string (specific item or service being offered)
+- product: string (specific item or service being offered, in English)
 - expiry: number (minutes until the offer expires, e.g. 25)
 - emoji: string (single emoji that best represents the offer)
 - token: string (exactly 8 uppercase alphanumeric characters, e.g. "A3BF92XK")`;
@@ -101,7 +103,7 @@ Context signals:
 - Time of day: ${time}
 - Current demand level: ${demand}
 
-The offer must feel urgently relevant to the weather and time. Low demand means the business is quiet and willing to offer deeper discounts. High demand means exclusivity and scarcity. Make the merchant feel like an authentic Stuttgart local business.`;
+The offer must feel urgently relevant to the weather and time. Low demand means the business is quiet and willing to offer deeper discounts. High demand means exclusivity and scarcity. Make the merchant feel like an authentic Stuttgart local business. All output must be in English.`;
 
   const requestBody = {
     model: 'claude-sonnet-4-6',

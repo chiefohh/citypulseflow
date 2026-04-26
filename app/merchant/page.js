@@ -29,12 +29,12 @@ const hourlyData = [
 
 /* ── Recent offers table data ── */
 const recentOffers = [
-  { time: '20:14', offer: 'Rainy evening hot chocolate', merchant: 'Café Schlossgarten', discount: '20%',  status: 'redeemed' },
-  { time: '19:58', offer: 'After-work Maultaschen deal',  merchant: 'Gasthaus Bohnenviertel', discount: '15%', status: 'claimed'  },
-  { time: '19:41', offer: 'Cold night warm ramen',        merchant: 'Noodle Bar Mitte',     discount: '25%', status: 'redeemed' },
-  { time: '19:30', offer: 'Evening cocktail 2-for-1',     merchant: 'Bar Nord 21',          discount: '2-for-1', status: 'expired'  },
-  { time: '19:12', offer: 'Quiet hour pizza slice',       merchant: 'Pizzeria Süd',         discount: '30%', status: 'redeemed' },
-  { time: '18:55', offer: 'Pre-dinner aperitivo',         merchant: 'Enoteca West',         discount: '18%', status: 'claimed'  },
+  { time: '20:14', offer: 'Rainy evening hot chocolate',  merchant: 'Castle Garden Café',      discount: '20%',     status: 'redeemed' },
+  { time: '19:58', offer: 'After-work pasta special',     merchant: 'The Bean Quarter Tavern', discount: '15%',     status: 'claimed'  },
+  { time: '19:41', offer: 'Cold night warm ramen',        merchant: 'Noodle Bar Central',      discount: '25%',     status: 'redeemed' },
+  { time: '19:30', offer: 'Evening cocktail 2-for-1',     merchant: 'Bar North 21',            discount: '2-for-1', status: 'expired'  },
+  { time: '19:12', offer: 'Quiet hour pizza slice',       merchant: 'South Side Pizza',        discount: '30%',     status: 'redeemed' },
+  { time: '18:55', offer: 'Pre-dinner wine and snacks',   merchant: 'West Quarter Wine Bar',   discount: '18%',     status: 'claimed'  },
   { time: '18:33', offer: 'Gym protein shake deal',       merchant: 'FitStop Stuttgart',    discount: '10%', status: 'generated'},
   { time: '18:10', offer: 'Rush hour taxi voucher',       merchant: 'City Cabs GmbH',       discount: '5 EUR', status: 'redeemed'},
 ];
@@ -438,6 +438,25 @@ export default function MerchantPage() {
           </div>
 
         </div>
+
+        <footer
+          style={{
+            borderTop: '1px solid rgba(139,92,246,0.12)',
+            padding: '32px 24px',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            style={{
+              fontFamily: '"Inter", sans-serif',
+              fontWeight: 400,
+              fontSize: 13,
+              color: '#334155',
+            }}
+          >
+            © 2026 CityPulseFlow &nbsp;·&nbsp; The City Knows. You Benefit.
+          </p>
+        </footer>
       </main>
     </div>
   );
