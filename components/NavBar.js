@@ -40,7 +40,16 @@ export default function NavBar() {
         }}
       >
         {/* Logo */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+        <Link
+          href="/"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 10,
+            textDecoration: 'none',
+            cursor: 'pointer',
+          }}
+        >
           <Building2 size={22} color="#7C3AED" strokeWidth={1.75} />
           <span
             style={{
@@ -51,7 +60,6 @@ export default function NavBar() {
               color: '#F1F5F9',
               letterSpacing: '-0.01em',
               transition: 'text-shadow 0.3s ease',
-              cursor: 'default',
               paddingBottom: '2px',
               overflow: 'visible',
             }}
@@ -65,7 +73,7 @@ export default function NavBar() {
           >
             CityPulseFlow
           </span>
-        </div>
+        </Link>
 
         {/* Hamburger */}
         <button

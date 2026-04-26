@@ -115,7 +115,7 @@ export default function DemoSimulator() {
             margin: '0 0 56px',
           }}
         >
-          Set your context. Claude AI does the rest.
+          Set your context. PulseEngine does the rest.
         </motion.p>
 
         {/* Context selector panel */}
@@ -182,7 +182,7 @@ export default function DemoSimulator() {
             }}
           >
             {loading && <Spinner />}
-            {loading ? 'Claude is thinking…' : 'Generate My Offer'}
+            {loading ? 'PulseEngine thinking…' : 'Generate My Offer'}
           </button>
         </motion.div>
 
@@ -241,7 +241,7 @@ export default function DemoSimulator() {
                   letterSpacing: '0.01em',
                 }}
               >
-                Offer generated uniquely by Claude AI based on real-time context signals.
+                Offer generated uniquely by PulseEngine based on real-time context signals.
               </p>
             </motion.div>
           )}

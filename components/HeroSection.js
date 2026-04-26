@@ -10,7 +10,7 @@ const fadeUp = (delay = 0) => ({
 
 const stats = [
   { icon: '📍', label: '80m away' },
-  { icon: '⚡', label: 'Real-time Claude AI' },
+  { icon: '⚡', label: 'Real-time PulseEngine' },
   { icon: '⏱', label: '12 min offers' },
 ];
 
@@ -66,7 +66,7 @@ export default function HeroSection() {
               letterSpacing: '0.02em',
             }}
           >
-            Powered by Claude AI
+            Powered by CityPulseFlow Engine
           </span>
         </div>
       </motion.div>

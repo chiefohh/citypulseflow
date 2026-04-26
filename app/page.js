@@ -32,7 +32,7 @@ export default function Home() {
               color: '#334155',
             }}
           >
-            © 2025 CityPulseFlow &nbsp;·&nbsp; Built for DSV Gruppe Hackathon &nbsp;·&nbsp; Powered by Claude AI
+            © 2025 CityPulseFlow &nbsp;·&nbsp; The City Knows. You Benefit.
           </p>
         </footer>
       </main>

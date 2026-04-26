@@ -15,12 +15,12 @@ const cards = [
   },
   {
     icon: Brain,
-    title: 'Claude AI Engine',
+    title: 'PulseEngine',
     accent: '#7C3AED',
     glowColor: 'rgba(124,58,237,0.35)',
     borderGlow: 'rgba(124,58,237,0.5)',
     description:
-      'Claude generates a unique emotional offer every single time — no templates.',
+      'PulseEngine generates a unique emotional offer every single time — no templates.',
   },
   {
     icon: QrCode,
