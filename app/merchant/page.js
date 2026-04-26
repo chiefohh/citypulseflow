@@ -103,13 +103,15 @@ function StatCard({ label, value, suffix, prefix = '', accent, glow }) {
         {label}
       </p>
       <p style={{
-        fontFamily: '"Syne", sans-serif',
+        fontFamily: '"Raleway", sans-serif',
         fontWeight: 800,
         fontSize: 'clamp(24px, 3vw, 36px)',
         color: accent,
         margin: 0,
         letterSpacing: '-0.02em',
-        lineHeight: 1,
+        lineHeight: '1.4',
+        paddingBottom: '4px',
+        overflow: 'visible',
       }}>
         {prefix}{count}{suffix}
       </p>
@@ -173,9 +175,12 @@ export default function MerchantPage() {
 
           {/* Heading */}
           <h1 style={{
-            fontFamily: '"Syne", sans-serif',
+            fontFamily: '"Raleway", sans-serif',
             fontWeight: 800,
             fontSize: 'clamp(28px, 4vw, 48px)',
+            lineHeight: '1.4',
+            paddingBottom: '4px',
+            overflow: 'visible',
             color: '#F1F5F9',
             margin: '0 0 8px',
             letterSpacing: '-0.02em',
@@ -209,9 +214,12 @@ export default function MerchantPage() {
             marginBottom: 48,
           }}>
             <h2 style={{
-              fontFamily: '"Syne", sans-serif',
+              fontFamily: '"Raleway", sans-serif',
               fontWeight: 700,
               fontSize: 18,
+              lineHeight: '1.4',
+              paddingBottom: '4px',
+              overflow: 'visible',
               color: '#F1F5F9',
               margin: '0 0 24px',
               letterSpacing: '-0.01em',
@@ -252,11 +260,14 @@ export default function MerchantPage() {
             WebkitBackdropFilter: 'blur(12px)',
             overflow: 'hidden',
           }}>
-            <div style={{ padding: '24px 28px 16px' }}>
+            <div style={{ padding: '24px 28px 20px' }}>
               <h2 style={{
-                fontFamily: '"Syne", sans-serif',
+                fontFamily: '"Raleway", sans-serif',
                 fontWeight: 700,
                 fontSize: 18,
+                lineHeight: '1.4',
+                paddingBottom: '4px',
+                overflow: 'visible',
                 color: '#F1F5F9',
                 margin: 0,
                 letterSpacing: '-0.01em',
@@ -314,9 +325,12 @@ export default function MerchantPage() {
                         </td>
                         <td style={tdStyle}>
                           <span style={{
-                            fontFamily: '"Syne", sans-serif',
+                            fontFamily: '"Raleway", sans-serif',
                             fontWeight: 700,
                             fontSize: 14,
+                            lineHeight: '1.4',
+                            paddingBottom: '2px',
+                            overflow: 'visible',
                             color: '#F1F5F9',
                           }}>
                             {row.discount}
@@ -349,9 +363,12 @@ export default function MerchantPage() {
           {/* AI Rule Configuration */}
           <div style={{ marginTop: 48 }}>
             <h2 style={{
-              fontFamily: '"Syne", sans-serif',
+              fontFamily: '"Raleway", sans-serif',
               fontWeight: 800,
               fontSize: 'clamp(20px, 3vw, 28px)',
+              lineHeight: '1.4',
+              paddingBottom: '4px',
+              overflow: 'visible',
               color: '#F1F5F9',
               margin: '0 0 8px',
               letterSpacing: '-0.02em',
@@ -480,9 +497,12 @@ function RuleCard({ title, description, params }) {
       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 16, marginBottom: 12 }}>
         <div>
           <h3 style={{
-            fontFamily: '"Syne", sans-serif',
+            fontFamily: '"Raleway", sans-serif',
             fontWeight: 700,
             fontSize: 17,
+            lineHeight: '1.4',
+            paddingBottom: '4px',
+            overflow: 'visible',
             color: '#F1F5F9',
             margin: '0 0 6px',
             letterSpacing: '-0.01em',

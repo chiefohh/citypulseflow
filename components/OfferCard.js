@@ -64,7 +64,7 @@ function CountdownTimer({ expiryMinutes }) {
           fill="#F1F5F9"
           fontSize="22"
           fontWeight="700"
-          fontFamily="Syne, sans-serif"
+          fontFamily="Raleway, sans-serif"
         >
           {String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
         </text>
@@ -106,15 +106,17 @@ function WordRevealHeadline({ headline }) {
   return (
     <h2
       style={{
-        fontFamily: '"Syne", sans-serif',
+        fontFamily: '"Raleway", sans-serif',
         fontWeight: 800,
         fontSize: 'clamp(22px, 4vw, 28px)',
-        lineHeight: 1.25,
+        lineHeight: '1.4',
         color: '#F1F5F9',
         margin: 0,
         textAlign: 'center',
         letterSpacing: '-0.02em',
-        minHeight: '2.5em',
+        minHeight: 'calc(2.5em + 8px)',
+        paddingBottom: '8px',
+        overflow: 'visible',
       }}
     >
       {words.map((word, i) => (
@@ -171,14 +173,16 @@ export default function OfferCard({ offer, onClaim }) {
             display: 'inline-flex',
             alignItems: 'center',
             gap: 6,
-            padding: '6px 14px',
+            padding: '6px 14px 8px',
             borderRadius: 999,
             background: 'rgba(124,58,237,0.12)',
             border: '1px solid rgba(124,58,237,0.25)',
             fontFamily: '"Inter", sans-serif',
             fontWeight: 600,
             fontSize: 13,
+            lineHeight: '1.4',
             color: '#C4B5FD',
+            overflow: 'visible',
           }}
         >
           <Store size={13} strokeWidth={2} />
@@ -189,7 +193,7 @@ export default function OfferCard({ offer, onClaim }) {
             display: 'inline-flex',
             alignItems: 'center',
             gap: 6,
-            padding: '6px 14px',
+            padding: '6px 14px 8px',
             borderRadius: 999,
             background: 'rgba(6,182,212,0.1)',
             border: '1px solid rgba(6,182,212,0.25)',
@@ -210,10 +214,12 @@ export default function OfferCard({ offer, onClaim }) {
       {/* Discount */}
       <div
         style={{
-          fontFamily: '"Syne", sans-serif',
+          fontFamily: '"Raleway", sans-serif',
           fontWeight: 800,
           fontSize: 'clamp(56px, 12vw, 80px)',
-          lineHeight: 1,
+          lineHeight: '1.4',
+          paddingBottom: '8px',
+          overflow: 'visible',
           background: 'linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',

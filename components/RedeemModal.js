@@ -228,7 +228,7 @@ export default function RedeemModal({ offer, onClose }) {
               <Check size={40} color="#22C55E" strokeWidth={2.5} />
             </motion.div>
 
-            <h2 style={{ fontFamily: '"Syne", sans-serif', fontWeight: 800, fontSize: 28, color: '#F1F5F9', margin: 0, textAlign: 'center', letterSpacing: '-0.02em' }}>
+            <h2 style={{ fontFamily: '"Raleway", sans-serif', fontWeight: 800, fontSize: 28, lineHeight: '1.4', paddingBottom: '4px', overflow: 'visible', color: '#F1F5F9', margin: 0, textAlign: 'center', letterSpacing: '-0.02em' }}>
               Redeemed Successfully
             </h2>
 
@@ -239,7 +239,8 @@ export default function RedeemModal({ offer, onClose }) {
             <div style={{
               padding: '14px 32px', borderRadius: 999,
               background: 'rgba(34,197,94,0.1)', border: '1px solid rgba(34,197,94,0.3)',
-              fontFamily: '"Syne", sans-serif', fontWeight: 800, fontSize: 32,
+              fontFamily: '"Raleway", sans-serif', fontWeight: 800, fontSize: 32,
+              lineHeight: '1.4', paddingBottom: '4px', overflow: 'visible',
               color: '#22C55E', letterSpacing: '-0.02em',
             }}>
               {offer.discount} saved!
@@ -277,9 +278,12 @@ const labelStyle = {
 };
 
 const headingStyle = {
-  fontFamily: '"Syne", sans-serif',
+  fontFamily: '"Raleway", sans-serif',
   fontWeight: 700,
   fontSize: 20,
+  lineHeight: '1.4',
+  paddingBottom: '4px',
+  overflow: 'visible',
   color: '#F1F5F9',
   margin: 0,
 };

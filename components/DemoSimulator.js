@@ -86,13 +86,16 @@ export default function DemoSimulator() {
           viewport={{ once: true, margin: '-60px' }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
           style={{
-            fontFamily: '"Syne", sans-serif',
+            fontFamily: '"Raleway", sans-serif',
             fontWeight: 800,
             fontSize: 'clamp(30px, 5vw, 48px)',
+            lineHeight: '1.4',
             color: '#F1F5F9',
             textAlign: 'center',
             margin: '0 0 12px',
             letterSpacing: '-0.02em',
+            paddingBottom: '4px',
+            overflow: 'visible',
           }}
         >
           Generate Your Perfect Offer

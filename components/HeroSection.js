@@ -74,14 +74,16 @@ export default function HeroSection() {
       {/* Headline */}
       <motion.h1 {...fadeUp(0.15)}
         style={{
-          fontFamily: '"Syne", sans-serif',
+          fontFamily: '"Raleway", sans-serif',
           fontWeight: 800,
           fontSize: 'clamp(48px, 8vw, 96px)',
-          lineHeight: 1.05,
+          lineHeight: '1.4',
           color: '#F1F5F9',
           margin: '0 0 24px',
           maxWidth: 900,
           letterSpacing: '-0.03em',
+          paddingBottom: '4px',
+          overflow: 'visible',
         }}
       >
         The offer that finds{' '}

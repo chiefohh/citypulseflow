@@ -71,7 +71,7 @@ function FeatureCard({ icon: Icon, title, accent, glowColor, borderGlow, descrip
         padding: '36px 32px 0',
         display: 'flex',
         flexDirection: 'column',
-        overflow: 'hidden',
+        overflow: 'visible',
         cursor: 'default',
       }}
     >
@@ -97,12 +97,15 @@ function FeatureCard({ icon: Icon, title, accent, glowColor, borderGlow, descrip
       {/* Title */}
       <h3
         style={{
-          fontFamily: '"Syne", sans-serif',
+          fontFamily: '"Raleway", sans-serif',
           fontWeight: 700,
           fontSize: 20,
+          lineHeight: '1.4',
           color: '#F1F5F9',
           margin: '0 0 12px',
           letterSpacing: '-0.01em',
+          paddingBottom: '4px',
+          overflow: 'visible',
         }}
       >
         {title}
@@ -117,6 +120,7 @@ function FeatureCard({ icon: Icon, title, accent, glowColor, borderGlow, descrip
           lineHeight: 1.65,
           color: '#64748B',
           margin: '0 0 36px',
+          paddingBottom: '4px',
           flexGrow: 1,
         }}
       >
@@ -131,6 +135,7 @@ function FeatureCard({ icon: Icon, title, accent, glowColor, borderGlow, descrip
           left: 0,
           right: 0,
           height: 3,
+          borderRadius: '0 0 20px 20px',
           background: `linear-gradient(90deg, transparent 0%, ${accent} 50%, transparent 100%)`,
           opacity: 0.7,
         }}
@@ -164,13 +169,16 @@ export default function FeatureCards() {
         viewport={{ once: true, margin: '-80px' }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         style={{
-          fontFamily: '"Syne", sans-serif',
+          fontFamily: '"Raleway", sans-serif',
           fontWeight: 800,
           fontSize: 'clamp(32px, 5vw, 52px)',
+          lineHeight: '1.4',
           color: '#F1F5F9',
           textAlign: 'center',
           margin: '0 0 64px',
           letterSpacing: '-0.02em',
+          paddingBottom: '4px',
+          overflow: 'visible',
         }}
       >
         How CityPulseFlow Works
